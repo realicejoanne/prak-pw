@@ -76,6 +76,7 @@ footer {
 	margin-top: 25px;
 	margin-left: 46px;
 	font-size: 16pt;
+	float: left;
 }
 
 .signform {
@@ -155,4 +156,16 @@ footer {
 	background-color: #ffc400;
 	font-weight: bold;
 	text-align: center;
+}
+
+.fixedtrend {
+	float: right;
+	position: fixed;
+	top: 100px;
+	left: 900px;
+	width: 100px;
+}
+
+.detail {
+	overflow:hidden;
 }
