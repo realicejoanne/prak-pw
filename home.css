@@ -111,23 +111,7 @@ article {
 	vertical-align: middle;
 }
 
-.jenjang a:hover {
-	float: left;
-	width: 30%;
-	text-align: center;
-	margin-bottom: 30px;
-	background-color: #ffc400;
-	border-radius: 50%;
-	width: 160px;
-	height: 160px;
-	margin-left: 20px;
-}
-
-.kategori {
-	vertical-align: middle;
-}
-
-.kategori a{
+.kategori a {
 	float: left;
 	width: 30%;
 	text-align: center;
@@ -137,18 +121,7 @@ article {
 	width: 160px;
 	height: 160px;
 	margin-left: 20px;
-}
-
-.kategori a:hover {
-	float: left;
-	width: 30%;
-	text-align: center;
-	margin-bottom: 30px;
-	background-color: #ffc400;
-	border-radius: 50%;
-	width: 160px;
-	height: 160px;
-	margin-left: 20px;
+	vertical-align: middle;
 }
 
 .tema {
@@ -165,11 +138,6 @@ article {
 	height: 500px;
 	width: 80%;
 	margin: auto
-}
-
-.sosmed img {
-	width: 50px;
-	height: 50px
 }
 
 footer {

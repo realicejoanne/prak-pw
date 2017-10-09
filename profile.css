@@ -96,15 +96,7 @@ menu a {
 	color: black
 }
 
-menu li a {
-	background-color: white;
- 	border-radius: 5px;
- 	list-style: none;
- 	padding: 15px;
- 	margin-right: 10px
- }
-
- menu li a.active {
+menu li {
  	background-color: #EEEEEE;
  	border-radius: 5px;
  	list-style: none;

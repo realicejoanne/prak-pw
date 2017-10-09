@@ -80,6 +80,7 @@ li a {
 	margin-top: 10px;
 }
 
+
 .button {
 	background-color: #f43547;
 	float: right;
@@ -97,15 +98,7 @@ menu a {
 }
 
 menu li a {
-	background-color: white;
- 	border-radius: 5px;
- 	list-style: none;
- 	padding: 15px;
- 	margin-right: 10px
- }
-
- menu li a.active {
- 	background-color: #EEEEEE;
+ 	background-color: white;
  	border-radius: 5px;
  	list-style: none;
  	padding: 15px;
@@ -116,18 +109,57 @@ a {
 	text-decoration: none
 }
 
-.profile_detail {
+menu li a.active {
+ 	background-color: #EEEEEE;
+ 	border-radius: 5px;
+ 	list-style: none;
+ 	padding: 15px;
+ 	margin-right: 10px
+}
+
+.action {
+	overflow: hidden;
+	border: 1px solid grey;
+	padding: 10px 20px;
+	margin-top: 20px
+}
+
+.action .left {
+	width: 60%;
+	margin-top: 30px;
+}
+
+.action .right {
+	width: 30%
+}
+
+.left a {
+	vertical-align: middle;
+}
+
+.delete {
+	background-color: #f43547;
+	float: right;
+	padding: 15px;
 	margin-top: 20px;
-	font-weight: bold;
-	font-size: 20px
+	margin-bottom: 20px;
+	margin-left: 10px
 }
 
-table {
-	border: none
+.delete a {
+	color: white
 }
 
-td {
-	padding: 5px
+.edit {
+	background-color: #ffc400;
+	float: right;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.edit a {
+	color: white
 }
 
 footer {
