@@ -10,3 +10,4 @@ class Profile extends MY_Controller {
         $this->load->view('layout', $data);
     }
 }
+?>
