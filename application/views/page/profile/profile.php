@@ -1,7 +1,8 @@
 
 	
 	<div class="container">
-    <?php if($user): foreach($user as $profile): ?>
+    <!--
+<?php if($user): foreach($user as $profile): ?>
 		<div class="profile_detail">
 			<table>
 				<tr>
@@ -23,5 +24,27 @@
 			</table>
 		</div>
     <?php endforeach; endif;?>  
+-->
+
+    <div class="profile_detail">
+			<table>
+				<tr>
+					<td>Name</td>
+					<td>: Shofiyyah Nadhiroh</td>
+				</tr>
+				<tr>
+					<td>Location</td>
+					<td>: Jakarta, Indonesia</td>
+				</tr>
+				<tr>
+					<td>Member Since</td>
+					<td>: 1 Oktober 2017</td>
+				</tr>
+				<tr>
+					<td>Total Post</td>
+					<td>: 2</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 	

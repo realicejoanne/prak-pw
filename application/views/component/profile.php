@@ -8,7 +8,8 @@
     		</div>
     	</header>
     	<div class="container">
-        <?php if($user): foreach($user as $profile): ?>
+        <!--
+<?php if($user): foreach($user as $profile): ?>
     		<div class="profile">
     			<div class="left">
     				<img src="<?php echo base_url()?>images/profile_photo/<?php echo $profile->profile_photo?>">
@@ -20,4 +21,16 @@
     			</div>
     		</div>
         <?php endforeach; endif;?>
+-->
+
+    <div class="profile">
+			<div class="left">
+				<img src="images/profile.jpg">
+			</div>
+			<div class="right">
+				<h1>Shofiyyah Nadhiroh</h1>
+				<h3>Jakarta, Indonesia</h3>
+				<h3>Bio: Lorem Ipsum Dolor</h3>
+			</div>
+		</div>
     	</div>
