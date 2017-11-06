@@ -1,7 +1,8 @@
 
 	
 	<div class="container">
-    <?php if($user): foreach($user as $profile): ?>
+
+<?php if($user): foreach($user as $profile): ?>
 		<div class="profile_detail">
 			<table>
 				<tr>
@@ -23,5 +24,7 @@
 			</table>
 		</div>
     <?php endforeach; endif;?>  
-	</div>
+    
+    </div>
+
 	
