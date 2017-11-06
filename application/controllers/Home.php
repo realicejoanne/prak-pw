@@ -4,10 +4,9 @@ class Home extends MY_Controller {
     
     public function index()
     {
-        $data['content'] = 'page/home/home';
-        $data['user'] = $this->home_m->get_all();
+        $data['content'] = 'page/home/index';
+        $data['article'] = $this->home_m->get_all();
         
-        $this->load->view('layout', $data);
+        $this->load->view('layout2', $data);
     }
 }
-?>

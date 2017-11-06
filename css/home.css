@@ -1,0 +1,123 @@
+
+.home .top {
+	overflow: hidden;
+}
+
+.home .top_left {
+	width: 60%;
+	float: left
+}
+
+.home .top_left img {
+	width: 550px;
+}
+
+.home .top_right {
+	width: 40%;
+	float: right;
+}
+
+.home .top_right img {
+	width: 450px;
+	height: 195px
+}
+
+.home .judul {
+	text-align: center;
+	margin: 20px 0
+}
+
+article {
+	overflow: hidden;
+}
+
+.home .left{
+	float: left;
+	width: 40%;
+	overflow: hidden;
+}
+
+.home .left img{
+	width: 380px;
+	margin: 10px 0
+}
+
+.home .right {
+	float: right;
+	width: 60%;
+	overflow: hidden;
+}
+
+.home .jenjang a {
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #f43547;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+.home .jenjang a:hover {
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #ffc400;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
+}
+
+.home .kategori {
+	vertical-align: middle;
+}
+
+.home .kategori a{
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #f43547;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
+}
+
+.home .kategori a:hover {
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #ffc400;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
+}
+
+.home .tema {
+	padding: 30px;
+	overflow: hidden;
+}
+
+.home .sosmed {
+	background-color: #ffc400;
+	padding: 30px;
+	border-radius: 30px;
+	color: #f43547;
+	text-align: center;
+	height: 500px;
+	width: 80%;
+	margin: auto
+}
+
+.home .sosmed img {
+	width: 50px;
+	height: 50px
+}
