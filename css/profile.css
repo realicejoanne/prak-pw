@@ -183,3 +183,48 @@ footer {
 	padding: 20px 0;
 	margin-top: 20px
 }
+
+.action {
+	overflow: hidden;
+	border: 1px solid grey;
+	padding: 10px 20px;
+	margin-top: 20px
+}
+
+.action .sub_left {
+	width: 60%;
+	margin-top: 30px;
+}
+
+.action .sub_right {
+	width: 30%
+}
+
+.sub_left a {
+	vertical-align: middle;
+}
+
+.delete {
+	background-color: #f43547;
+	float: right;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px
+}
+
+.delete a {
+	color: white
+}
+
+.edit {
+	background-color: #ffc400;
+	float: right;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.edit a {
+	color: white
+}
