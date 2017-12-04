@@ -7,6 +7,7 @@
   # then use
   # RewriteBase /mypage/test1/
   RewriteBase /iBunda/
+  RewriteCond $1 !^(index.php|resources|robots\.txt)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^(.*)$ index.php?/$1 [L]
@@ -17,5 +18,5 @@
   # can be sent to index.php, and everything works as normal.
   # Submitted by: ElliotHaughin
 
-  ErrorDocument 404 /index.php
+  #ErrorDocument 404 /index.php
 </IfModule>

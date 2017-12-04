@@ -1,0 +1,101 @@
+
+#det #article {
+	padding: 20px; 
+    width: 600px;
+	margin: auto;
+	margin-top: 25px;
+	margin-left: 46px;
+	font-size: 16pt;
+	float: left;
+}
+
+.signform {
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 2px;
+	text-decoration: none;
+	height:40px;
+	width:400px;
+	font-size:16pt;
+}
+
+.btn-sign {
+	background-color: #ffc400;
+	border-radius: 20px;
+	border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height:40px;
+	width:400px;
+	font-size:14pt;
+}
+
+.btn-sign:hover {
+	background-color: #ffc400;
+	border-radius: 20px;
+	border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height:40px;
+	width:400px;
+	font-size:14pt;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.10), 0 5px 10px 0 rgba(0,0,0,0.10);
+}
+
+.btn-alt {
+	background-color: #f43547;
+	border-radius: 20px;
+	border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height:40px;
+	width:100px;
+	font-size:12pt;
+}
+
+.btn-alt:hover {
+	background-color: #f43547;
+	border-radius: 20px;
+	border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height:40px;
+	width:100px;
+	font-size:12pt;
+}
+
+.det .author {
+	border-color: #a8a8a8;
+	border-style: solid;
+	border-width: 2px;
+	padding: 15px;
+}
+
+.det .comment {
+	padding: 15px;
+	color: white;
+	border: none;
+	background-color: #ffc400;
+	font-weight: bold;
+	text-align: center;
+}
+
+#det #fixedtrend {
+	float: right;
+	position: fixed;
+	top: 100px;
+	left: 900px;
+	width: 100px;
+}
+
+.det .detail {
+	overflow:hidden;
+}

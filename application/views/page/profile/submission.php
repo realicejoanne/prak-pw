@@ -1,41 +1,23 @@
+<?php
+
+$this->load->view('component/profile');
+$this->load->view('component/menu_submission');
+
+?>
 <div class="container">
+<?php if($article): foreach($article as $info): ?>
 		<div class="action">
-			<div class="sub_left" style="float: left;">
-				<h2><a href="">Pentingnya Memakan Sayuran Saat Hamil</a></h2>
+			<div class="left" style="float: left;">
+				<h2><a href=""><?php echo $info->title?></a></h2>
 			</div>
-			<div class="sub_right" style="float: right">
+			<div class="right" style="float: right">
 				<div class="delete">
-					<a href="">DELETE</a>
+					<a href="<?php echo site_url('submission/remove_article/'.$info->id)?>">DELETE</a>
 				</div>
 				<div class="edit">
-					<a href="">EDIT</a>
+					<a href="<?php echo site_url('submission/edit/'.$info->id)?>">EDIT</a>
 				</div>
 			</div>
 		</div>
-		<div class="action">
-			<div class="sub_left" style="float: left;">
-				<h2><a href="">Bahayanya Mecin Bagi Janin</a></h2>
-			</div>
-			<div class="sub_right" style="float: right">
-				<div class="delete">
-					<a href="">DELETE</a>
-				</div>
-				<div class="edit">
-					<a href="">EDIT</a>
-				</div>
-			</div>
-		</div>
-		<div class="action">
-			<div class="sub_left" style="float: left;">
-				<h2><a href="">Ketika Anak Terlalu Banyak Mengonsumsi MSG</a></h2>
-			</div>
-			<div class="sub_right" style="float: right">
-				<div class="delete">
-					<a href="">DELETE</a>
-				</div>
-				<div class="edit">
-					<a href="">EDIT</a>
-				</div>
-			</div>
-		</div>
-	</div>
+<?php endforeach; endif;?> 
+</div>

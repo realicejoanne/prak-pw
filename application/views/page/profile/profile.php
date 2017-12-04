@@ -1,13 +1,18 @@
+<?php
 
+$this->load->view('component/profile');
+$this->load->view('component/menu_profile');
+
+?>
 	
 	<div class="container">
-    <!--
-<?php if($user): foreach($user as $profile): ?>
+
+<?php if($user): ?>
 		<div class="profile_detail">
 			<table>
 				<tr>
 					<td>Name</td>
-					<td>: <?php echo $profile->name?></td>
+					<td>: <?php echo $this->session->userdata('name') ?></td>
 				</tr>
 				<tr>
 					<td>Location</td>
@@ -15,7 +20,7 @@
 				</tr>
 				<tr>
 					<td>Member Since</td>
-					<td>: <?php echo $profile->member_since?></td>
+					<td>: <?php echo $this->session->userdata('member_since') ?></td>
 				</tr>
 				<tr>
 					<td>Total Post</td>
@@ -23,28 +28,8 @@
 				</tr>
 			</table>
 		</div>
-    <?php endforeach; endif;?>  
--->
+    <?php endif;?>  
+    
+    </div>
 
-    <div class="profile_detail">
-			<table>
-				<tr>
-					<td>Name</td>
-					<td>: Shofiyyah Nadhiroh</td>
-				</tr>
-				<tr>
-					<td>Location</td>
-					<td>: Jakarta, Indonesia</td>
-				</tr>
-				<tr>
-					<td>Member Since</td>
-					<td>: 1 Oktober 2017</td>
-				</tr>
-				<tr>
-					<td>Total Post</td>
-					<td>: 2</td>
-				</tr>
-			</table>
-		</div>
-	</div>
 	
