@@ -1,3 +1,5 @@
+/*==GENERAL==*/
+
 *{padding:0;margin:0; }
 
 body{
@@ -120,7 +122,7 @@ menu li a {
  	margin-right: 10px;
  }
  
- .btn-profile {
+.btn-profile {
 	list-style-type: none;
     margin: auto;
     padding: 0;
@@ -243,6 +245,7 @@ menu li a {
 	border-style: solid;
 	border-width: 2px;
 	padding: 15px;
+	font-size: 16pt;
 }
 
 .comment {
@@ -528,4 +531,44 @@ figure.effect-lily:hover p {
 	transition-delay: 0.05s;
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
+}
+
+.top {
+	overflow: hidden;
+}
+
+.top_left {
+	width: 60%;
+	float: left;
+}
+
+.top_left img {
+	width: 550px;
+}
+
+.top_right {
+	width: 40%;
+	float: right;
+}
+
+.post {
+	overflow: hidden;
+}
+
+.post_left {
+	width: 60%;
+	float: left;
+}
+
+.post_right {
+	width: 40%;
+	float: right;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    right: 0;
+}
+
+.post_right img {
+	width: 60%;
 }
