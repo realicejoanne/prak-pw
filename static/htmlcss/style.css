@@ -71,10 +71,10 @@ footer {
     border: 2px solid #a8a8a8;
     padding: 20px; 
     width: 550px;
-    height: 200px;
+    height: 250px;
 	margin: auto;
-	margin-top: 140px;
-	margin-bottom: 140px;
+	margin-top: 137px;
+	margin-bottom: 137px;
 }
 
 .rcorners2 {
@@ -82,10 +82,21 @@ footer {
     border: 2px solid #a8a8a8;
     padding: 20px; 
     width: 700px;
-    height: 387px;
+    height: 394px;
 	margin: auto;
-	margin-top: 46px;
-	margin-bottom: 46px;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+
+.rcorners3 {
+    border-radius: 25px;
+    border: 2px solid #a8a8a8;
+    padding: 20px; 
+    width: 700px;
+    height: 390px;
+	margin: auto;
+	margin-top: 28px;
+	margin-bottom: 28px;
 }
 
 .button {
@@ -165,16 +176,6 @@ menu li a {
 	margin-top: 20px;
 	font-weight: bold;
 	font-size: 20px;
-}
-
-#article {
-	padding: 20px; 
-    width: 600px;
-	margin: auto;
-	margin-top: 25px;
-	margin-left: 46px;
-	font-size: 16pt;
-	float: left;
 }
 
 .signform {
@@ -553,22 +554,38 @@ figure.effect-lily:hover p {
 
 .post {
 	overflow: hidden;
+	width: 700px;
+	margin: auto;
 }
 
-.post_left {
-	width: 60%;
-	float: left;
+.form-style ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style ul li  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #a8a8a8;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
 }
 
-.post_right {
-	width: 40%;
-	float: right;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-    right: 0;
+.form-style ul li input[type="text"] {
+	width: 100%;
 }
 
-.post_right img {
-	width: 60%;
+.form-style ul li textarea{
+    width: 100%;
+    height: 200px;
 }
