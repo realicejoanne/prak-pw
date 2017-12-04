@@ -6,7 +6,7 @@ body{
 	font-family: Arial; 
 }
 
-ul {
+.header {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,6 +31,12 @@ footer {
 	color:white;
 	font-weight: bold;
 	padding: 20px;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+	overflow: hidden;
 }
 
 .dropdown-content {
@@ -58,25 +64,116 @@ footer {
     display: block;
 }
 
-#rcorners2 {
+.rcorners1 {
+    border-radius: 25px;
+    border: 2px solid #a8a8a8;
+    padding: 20px; 
+    width: 550px;
+    height: 250px;
+	margin: auto;
+	margin-top: 137px;
+	margin-bottom: 137px;
+}
+
+.rcorners2 {
+    border-radius: 25px;
+    border: 2px solid #a8a8a8;
+    padding: 20px; 
+    width: 700px;
+    height: 394px;
+	margin: auto;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+
+.rcorners3 {
     border-radius: 25px;
     border: 2px solid #a8a8a8;
     padding: 20px; 
     width: 700px;
     height: 390px;
 	margin: auto;
-	margin-top: 46px;
-	margin-bottom: 46px;
+	margin-top: 28px;
+	margin-bottom: 28px;
 }
 
-#article {
-	padding: 20px; 
-    width: 600px;
-	margin: auto;
-	margin-top: 25px;
-	margin-left: 46px;
-	font-size: 16pt;
+.button {
+	background-color: #f43547;
+	float: right;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 170px;
+}
+
+.button a {
+	color: white;
+	text-decoration: none;
+}
+
+menu a {
+	color: black;
+}
+
+menu li a {
+	background-color: white;
+ 	border-radius: 5px;
+ 	list-style: none;
+ 	padding: 15px;
+ 	margin-right: 10px;
+ }
+
+ menu li a.active {
+ 	background-color: #EEEEEE;
+ 	border-radius: 5px;
+ 	list-style: none;
+ 	padding: 15px;
+ 	margin-right: 10px;
+ }
+ 
+.btn-profile {
+	list-style-type: none;
+    margin: auto;
+    padding: 0;
 	float: left;
+ }
+
+.profile {
+	overflow: hidden;
+	border: 1px solid grey;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+.profile .left img {
+	width: 170px;
+	height: 170px;
+	border-radius: 100%;
+}
+
+.profile .left {
+	float: left;
+	width: 20%;
+}
+
+.profile .right {
+	float: right;
+	width: 75%;
+	padding-top: 10px;
+}
+
+.profile .right h3{
+	margin-top: 20px;
+}
+
+.profile .right h1{
+	margin-top: 10px;
+}
+
+.profile_detail {
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .signform {
@@ -147,6 +244,7 @@ footer {
 	border-style: solid;
 	border-width: 2px;
 	padding: 15px;
+	font-size: 16pt;
 }
 
 .comment {
@@ -168,4 +266,324 @@ footer {
 
 .detail {
 	overflow:hidden;
+}
+
+.action {
+	overflow: hidden;
+	border: 1px solid grey;
+	padding: 10px 20px;
+	margin-top: 20px
+}
+
+.action .left {
+	width: 60%;
+	margin-top: 30px;
+}
+
+.action .right {
+	width: 30%
+}
+
+.left a {
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.delete {
+	background-color: #f43547;
+	float: right;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px
+}
+
+.delete a {
+	color: white;
+	text-decoration: none;
+}
+
+.edit {
+	background-color: #ffc400;
+	float: right;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.edit a {
+	color: white;
+	text-decoration: none;
+}
+
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #dd3333;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #dd3333;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #dd3333;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.tabset {
+  max-width: 65em;
+}
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 100%;
+	background: #343638;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-lily img {
+	max-width: none;
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+	text-align: left;
+}
+
+figure.effect-lily figcaption > div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+
+.top {
+	overflow: hidden;
+}
+
+.top_left {
+	width: 60%;
+	float: left;
+}
+
+.top_left img {
+	width: 550px;
+}
+
+.top_right {
+	width: 40%;
+	float: right;
+}
+
+.post {
+	overflow: hidden;
+	width: 700px;
+	margin: auto;
+}
+
+.form-style ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style ul li  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #a8a8a8;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+.form-style ul li input[type="text"] {
+	width: 100%;
+}
+
+.form-style ul li textarea{
+    width: 100%;
+    height: 140px;
 }

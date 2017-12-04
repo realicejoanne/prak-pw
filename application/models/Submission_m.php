@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 class Submission_m extends CI_Model {
@@ -32,3 +33,15 @@ class Submission_m extends CI_Model {
         // UPDATE artikel SET
     }
 }
+||||||| merged common ancestors
+=======
+<?php
+
+class Submission_m extends CI_Model {
+    
+    public function get_all()
+    {
+       return $this->db->get('article')->result();
+    }
+}
+>>>>>>> 4c2af29014e3e0d064ae1203dc2e52817c2d54a0

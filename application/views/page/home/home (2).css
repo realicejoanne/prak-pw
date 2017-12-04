@@ -1,78 +1,28 @@
-* {padding: 0; margin: 0}
 
-body {
-	font-family: arial
-}
-
-.container {
-	width: 1000px;
-	margin: auto;
+.home .top {
 	overflow: hidden;
 }
 
-header {
-	overflow: hidden;
-	background-color: #ffc400;
-	margin-bottom: 20px;
-	height: 50px;
-
-}
-
-ul {
-	overflow: hidden;
-	list-style-type: none;
-}
-
-li {
-	float: right;
-}
-
-.logo {
-	float: left
-}
-
-.logo img {
-	width: 120px;
-	height: 50px;
-}
-
-li a {
-	display: block;
-	text-decoration: none;
-	text-align: center;
-}
-
-.icon img {
-	width: 35px;
-    height: 25px;
-    margin: 0;
-    padding: 10px 0 10px 30px
-}
-
-.top {
-	overflow: hidden;
-}
-
-.top_left {
+.home .top_left {
 	width: 60%;
 	float: left
 }
 
-.top_left img {
+.home .top_left img {
 	width: 550px;
 }
 
-.top_right {
+.home .top_right {
 	width: 40%;
 	float: right;
 }
 
-.top_right img {
+.home .top_right img {
 	width: 450px;
 	height: 195px
 }
 
-.judul {
+.home .judul {
 	text-align: center;
 	margin: 20px 0
 }
@@ -81,24 +31,24 @@ article {
 	overflow: hidden;
 }
 
-.left{
+.home .left{
 	float: left;
 	width: 40%;
 	overflow: hidden;
 }
 
-.left img{
+.home .left img{
 	width: 380px;
 	margin: 10px 0
 }
 
-.right {
+.home .right {
 	float: right;
 	width: 60%;
 	overflow: hidden;
 }
 
-.jenjang a {
+.home .jenjang a {
 	float: left;
 	width: 30%;
 	text-align: center;
@@ -111,7 +61,7 @@ article {
 	vertical-align: middle;
 }
 
-.jenjang a:hover {
+.home .jenjang a:hover {
 	float: left;
 	width: 30%;
 	text-align: center;
@@ -123,11 +73,11 @@ article {
 	margin-left: 20px;
 }
 
-.kategori {
+.home .kategori {
 	vertical-align: middle;
 }
 
-.kategori a{
+.home .kategori a{
 	float: left;
 	width: 30%;
 	text-align: center;
@@ -139,7 +89,7 @@ article {
 	margin-left: 20px;
 }
 
-.kategori a:hover {
+.home .kategori a:hover {
 	float: left;
 	width: 30%;
 	text-align: center;
@@ -151,12 +101,12 @@ article {
 	margin-left: 20px;
 }
 
-.tema {
+.home .tema {
 	padding: 30px;
 	overflow: hidden;
 }
 
-.sosmed {
+.home .sosmed {
 	background-color: #ffc400;
 	padding: 30px;
 	border-radius: 30px;
@@ -167,15 +117,7 @@ article {
 	margin: auto
 }
 
-.sosmed img {
+.home .sosmed img {
 	width: 50px;
 	height: 50px
-}
-
-footer {
-	color: white;
-	background-color: black;
-	width: 100%;
-	padding: 20px 0;
-	margin-top: 20px
 }

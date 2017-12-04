@@ -19,12 +19,49 @@ header {
 }
 
 ul {
-	overflow: hidden;
-	list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffc300;
+	font-weight: bold;
+}
+
+li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
 }
 
 li {
 	float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dd3333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .logo {
@@ -34,12 +71,6 @@ li {
 .logo img {
 	width: 120px;
 	height: 50px;
-}
-
-li a {
-	display: block;
-	text-decoration: none;
-	text-align: center;
 }
 
 .icon img {
@@ -111,7 +142,23 @@ article {
 	vertical-align: middle;
 }
 
-.kategori a {
+.jenjang a:hover {
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #ffc400;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
+}
+
+.kategori {
+	vertical-align: middle;
+}
+
+.kategori a{
 	float: left;
 	width: 30%;
 	text-align: center;
@@ -121,7 +168,18 @@ article {
 	width: 160px;
 	height: 160px;
 	margin-left: 20px;
-	vertical-align: middle;
+}
+
+.kategori a:hover {
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-bottom: 30px;
+	background-color: #ffc400;
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+	margin-left: 20px;
 }
 
 .tema {
@@ -138,6 +196,11 @@ article {
 	height: 500px;
 	width: 80%;
 	margin: auto
+}
+
+.sosmed img {
+	width: 50px;
+	height: 50px
 }
 
 footer {
