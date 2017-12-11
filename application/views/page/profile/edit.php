@@ -6,6 +6,7 @@ $this->load->view('component/menu_submission');
 ?>
     <div class="container">
     <?php echo form_open()?>
+    <?php if($article_detail): ?>
             <div class="insert" style="overflow: hidden; border: 1px solid grey; padding: 10px 20px; margin-top: 20px">
                 <h4>EDIT ARTICLE</h4>
                 <label>Tingkat</label>
@@ -22,13 +23,14 @@ $this->load->view('component/menu_submission');
                         <option value="mitos">mitos</option>
                     </select><br />
         		<label>Judul</label>
-                <input type="text" name="title" value="<?php echo $article->title?>"/><br />
-                <label>Gambarl</label>
-                <input type="text" name="picture" value="<?php echo $article->picture?>"/><br />
+                <input type="text" name="title" value="<?php echo $article_detail->title?>"/><br />
+                <label>Gambar</label>
+                <input type="text" name="picture" value="<?php echo $article_detail->picture?>"/><br />
                 <label>Artikel</label>
-                <textarea rows="4" cols="50" name="content" value="<?php echo $article->content?>" ></textarea><br />
+                <textarea rows="5" cols="110" name="content" ><?php echo $article_detail->content?></textarea><br />
                 <input type="submit" name="update" value="Update" />
             </div>
+     <?php endif;?>
 	<?php echo form_close()?>
     </div>
     

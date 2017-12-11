@@ -52,14 +52,16 @@ class Submission extends MY_Controller {
         $id = $this->uri->segment(3);
         
         $this->submission_m->delete_article($id);
+        
+        redirect('submission');
     }
     
     public function edit($id)
     {
+        $id = $this->uri->segment(3);
         $data['article_detail'] = $this->submission_m->get_detail($id);
         $data['user'] = $this->profile_m->get_all();
         $data['content'] = 'page/profile/edit';
-        $data['article'] = $this->db->get()->row();
         //validasi form
         $this->form_validation->set_rules('stage','Tingkat', 'required');
         $this->form_validation->set_rules('topic','Kategori', 'required');
@@ -85,7 +87,7 @@ class Submission extends MY_Controller {
                     
                 );
                 
-                $id_article = $this->input->article('id');
+                $id_article = $this->input->article_detail('id');
                 
                 //panggil model artikel
                 $this->submission_m->update($data_article, $id);

@@ -1,5 +1,4 @@
 
-    
 <div class="rcorners2" align="center">
 <?php echo form_open()?>
 			<h1>Sign Up</h1><br><br><br><br>

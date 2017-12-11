@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 class Home extends MY_Controller {
@@ -12,7 +11,10 @@ class Home extends MY_Controller {
     {
         $data['content'] = 'page/home/index';
         
-        $data['article'] = $this->home_m->get_all();
+        $this->db->select("article.*, user.name");
+        $this->db->from('article');
+        $this->db->join('user', 'user.id = article.id_user');
+        $data['article'] = $this->db->get()->result();
         
         $this->load->view('layout', $data);
         
@@ -25,19 +27,3 @@ class Home extends MY_Controller {
         redirect(base_url());
     }
 }
-||||||| merged common ancestors
-=======
-<?php
-
-class Home extends MY_Controller {
-    
-    public function index()
-    {
-        $data['content'] = 'page/home/home';
-        $data['user'] = $this->home_m->get_all();
-        
-        $this->load->view('layout', $data);
-    }
-}
-?>
->>>>>>> 4c2af29014e3e0d064ae1203dc2e52817c2d54a0
