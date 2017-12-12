@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>iBunda Website</title>
+		<!-- css -->
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<!-- header -->
+		<ul class="header">
+			<li style="float:left;"><a href="home.html"><img src="images/logo.png" width="80"></a></li>
+			<li style="float:left;"><a href="#hot"><img src="images/hot.png" width="20"> HOT</a></li>
+			<li style="float:left;"><a href="#trend"><img src="images/trend.png" width="20"> TRENDING</a></li>
+			<li style="float:left;"><a href="#pop"><img src="images/pop.png" width="20"> POPULAR</a></li>
+			<li style="float:left;"><a href="#menu"><img src="images/menu.png" width="20"></a></li>
+			<li style="float:left;"><a href="#search"><img src="images/search.png" width="20"></a></li>
+			<li style="float:right;"><a href="article.html"><img src="images/submit.png" width="130"></a></li>
+			<li class="dropdown" style="float:right;">
+				<a href="account" class="dropbtn"><img src="images/homeprofile.png" width="25"></a>
+				<div class="dropdown-content">
+				  <a href="profile.html">Profile</a>
+				  <a href="#">Settings</a>
+				  <a href="#">Logout</a></div>
+			</li>
+		</ul>
+		
+		<!-- profile box -->
+		<div class="container">
+			<div class="profile">
+				<div class="left">
+					<img src="images/profile.jpg">
+				</div>
+				<div class="right">
+					<h1>Shofiyyah Nadhiroh</h1>
+					<h3>Jakarta, Indonesia</h3>
+					<h3>Bio: Lorem Ipsum Dolor</h3>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="button">
+				<a href=""><img src="images/pencil.png" width="12%">&nbsp;&nbsp;EDIT PROFILE</a>
+			</div>
+		</div>
+		<br>
+		<!-- profile section -->
+		<div class="container">
+			<div class="tabset">
+				<input type="radio" name="tabset" id="tab1" aria-controls="profile" checked>
+				<label for="tab1">Profile</label>
+				<input type="radio" name="tabset" id="tab2" aria-controls="submissions">
+				<label for="tab2">Submissions</label>
+				<input type="radio" name="tabset" id="tab3" aria-controls="activity">
+				<label for="tab3">Activity</label>
+	  
+				<div class="tab-panels">
+					<section id="profile" class="tab-panel">
+						<div class="container">
+							<div class="profile_detail">
+								<table>
+									<tr>
+										<td>Name</td>
+										<td>: Shofiyyah Nadhiroh</td>
+									</tr>
+									<tr>
+										<td>Location</td>
+										<td>: Jakarta, Indonesia</td>
+									</tr>
+									<tr>
+										<td>Member Since</td>
+										<td>: 1 Oktober 2017</td>
+									</tr>
+									<tr>
+										<td>Total Post</td>
+										<td>: 2</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</section>
+					<section id="submissions" class="tab-panel">
+						<div class="container">
+							<div class="action">
+								<div class="left" style="float: left;">
+									<h2><a href="">Pentingnya Memakan Sayuran Saat Hamil</a></h2>
+								</div>
+								<div class="right" style="float: right">
+									<div class="delete">
+										<a href="">DELETE</a>
+									</div>
+									<div class="edit">
+										<a href="">EDIT</a>
+									</div>
+								</div>
+							</div>
+							<div class="action">
+								<div class="left" style="float: left;">
+									<h2><a href="">Bahayanya Mecin Bagi Janin</a></h2>
+								</div>
+								<div class="right" style="float: right">
+									<div class="delete">
+										<a href="">DELETE</a>
+									</div>
+									<div class="edit">
+										<a href="">EDIT</a>
+									</div>
+								</div>
+							</div>
+							<div class="action">
+								<div class="left" style="float: left;">
+									<h2><a href="">Ketika Anak Terlalu Banyak Mengonsumsi MSG</a></h2>
+								</div>
+								<div class="right" style="float: right">
+									<div class="delete">
+										<a href="">DELETE</a>
+									</div>
+									<div class="edit">
+										<a href="">EDIT</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="activity" class="tab-panel">
+						<div class="container">
+							Shofiyyah changed profile photo. <div style="font-size:8pt">5 years ago.</div>
+							<hr>
+							Shofiyyah added new post. <div style="font-size:8pt">5 years ago.</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<footer>
+			<div class="container">
+				Copyright &copy; Prak-PW 2017
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Edit Article</title>
+		<!-- css -->
+		<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<!-- header -->
+		<ul class="header">
+			<li><a href="home.html"><img src="images/logo.png" width="100" style="text-align:center;"></a></li>
+		</ul>
+		
+		<!-- add/edit article -->
+		<div class="container">
+		<br><br>
+		<center><h1>Add/Edit Article</h1></center>
+			<div class="rcorners3">
+				<form class="form-style">
+					<ul>
+						<li><input type="file" name="photo" class="field-style" accept=".jpg, .jpeg, .png"></li>
+						<li><input type="text" name="title" class="field-style" placeholder="Title"></li>
+						<li><textarea name="area" class="field-style" placeholder="Type something here"></textarea></li>
+						<li>
+							<select id="category" name="category" class="field-style">
+								<option value="">Select category</option>
+								<option value="kesehatan">Kesehatan</option>
+								<option value="kecerdasan">Kecerdasan</option>
+								<option value="mitos">Mitos</option>
+								<option value="psikologi">Psikologi</option>
+								<option value="resep">Resep</option>
+							</select>
+						</li>
+						<li><input type="submit" value="Submit" class="btn-alt"></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+		
+		<!-- footer -->
+		<footer>
+			<div class="container"><p>Copyright &copy; Prak-PW 2017</p></div>
+		</footer>
+	</body>
+</html>
