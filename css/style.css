@@ -71,37 +71,21 @@ header {
 }
 
 .home .top {
-
 	overflow: hidden;
-
 }
-
-
 
 .home .top_left {
-
 	width: 50%;
-
 	float: left;
-
 }
-
-
 
 .home .top_left img {
-
 	width: 500px;
-
 }
 
-
-
 .home .top_right {
-
 	width: 45%;
-
 	float: right;
-
 }
 
 .home .judul {
@@ -386,6 +370,17 @@ article {
 	margin-bottom: 65px;
 }
 
+.rcorners3 {
+    border-radius: 25px;
+    border: 2px solid #a8a8a8;
+    padding: 20px; 
+    width: 700px;
+    height: 390px;
+	margin: auto;
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+
 .btn-sign {
 	background-color: #ffc400;
 	border-radius: 20px;
@@ -424,6 +419,7 @@ article {
     height:40px;
 	width:100px;
 	font-size:12pt;
+	padding-top: 3px;
 }
 
 .btn-alt:hover {
@@ -468,8 +464,6 @@ menu li {
 .logo {
 	float: left
 }
-
-
 
 menu li a {
     display: block;
@@ -573,10 +567,6 @@ td {
 	margin-top: 20px
 }
 
-.insert {
-	
-}
-
 .action .sub_left {
 	width: 60%;
 	margin-top: 30px;
@@ -624,4 +614,36 @@ footer {
 	margin-top: 20px;
     position:fixed;
     bottom:0;
+}
+
+.form-style ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.form-style ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-style ul li  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #a8a8a8;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+.form-style ul li input[type="text"] {
+	width: 100%;
+}
+
+.form-style ul li textarea{
+    width: 100%;
+    height: 140px;
 }

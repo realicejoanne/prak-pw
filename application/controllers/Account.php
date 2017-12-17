@@ -42,9 +42,9 @@ class Account extends MY_Controller {
             else
             {
                 //buat pesan gagal login
-                $this->session->set_flashdata('failed', 'Akun anda salah, silahkan coba lagi.');
-                
-                redirect('account');
+                $data_sess = array('error_message' => 'Invalid Username or Password');
+                             
+                $this->load->view('layout', $data);
             }
         }
     }
